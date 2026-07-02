@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  # 1. The PostgreSQL Database Node
+  
   db:
     image: postgres:15-alpine
     environment:
@@ -13,13 +13,13 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  # 2. The Redis Message Broker Node
+  
   redis:
     image: redis:7-alpine
     ports:
       - "6379:6379"
 
-  # 3. The FastAPI Web App Node
+  
   web:
     build: .
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
@@ -32,7 +32,7 @@ services:
       - db
       - redis
 
-  # 4. The Python Background Worker Node
+  
   worker:
     build: .
     command: python worker.py
