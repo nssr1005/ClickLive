@@ -17,6 +17,6 @@ class Event(Base):
     action = Column(String)
     timestamp = Column(DateTime, default=datetime.datetime.utcnow)
 
-# Create the tables in the database
+
 def init_db():
     Base.metadata.create_all(bind=engine)
