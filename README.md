@@ -1,11 +1,11 @@
-# ClickLive 🚀
+# ClickLive 
 ### High-Performance, Real-Time Clickstream Ingestion Pipeline
 
 ClickLive is a production-grade, event-driven backend architecture designed to handle high-velocity user activity data (clicks, views, transactions) without overwhelming persistent storage. By decoupling the API ingestion layer from the database worker layer using a message queue, the system can withstand massive traffic spikes seamlessly.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The architecture is entirely containerized and split into four specialized, independent services:
 
@@ -17,7 +17,7 @@ The architecture is entirely containerized and split into four specialized, inde
 
 ---
 
-## 🛠️ Tech Stack & Concepts Demonstrated
+##  Tech Stack & Concepts Demonstrated
 
 * **Language:** Python 3.10+
 * **Framework:** FastAPI (Asynchronous Server)
@@ -29,7 +29,7 @@ The architecture is entirely containerized and split into four specialized, inde
 
 ---
 
-## 🚀 Quick Start / Local Deployment
+##  Quick Start / Local Deployment
 
 This entire pipeline is configured to spin up with a single command using Docker.
 
